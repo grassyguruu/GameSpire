@@ -2,89 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameSpire</title>
+  <title>GameSpire - Home</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
       background-color: #0e0e0e;
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: #1f1f1f;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       padding: 2rem;
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
+    h1 {
       color: #00ffcc;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
     }
 
     .play-button {
-      margin-top: 1rem;
+      margin-top: 2rem;
       padding: 1rem 2rem;
       font-size: 1.2rem;
-      color: #0e0e0e;
       background-color: #00ffcc;
+      color: #0e0e0e;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      transition: transform 0.2s;
+      transition: background-color 0.2s;
     }
 
     .play-button:hover {
-      transform: scale(1.1);
+      background-color: #00ddb3;
     }
 
-    main {
-      flex-grow: 1;
-      padding: 2rem;
-      text-align: center;
+    nav {
+      margin-top: 2rem;
     }
 
-    .game-preview {
-      background-color: #1a1a1a;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 255, 204, 0.2);
-      max-width: 600px;
-      margin: 2rem auto;
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
     }
 
-    footer {
-      background-color: #1f1f1f;
-      padding: 1rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <h1>GameSpire</h1>
+  <p>Welcome to GameSpire. A focused platform for accessible gaming experiences.</p>
 
-  <header>
-    <h1>GameSpire</h1>
-    <button class="play-button" onclick="alert('Game loading...')">Play Now</button>
-  </header>
+  <button class="play-button" onclick="location.href='game.html'">Play Now</button>
 
-  <main>
-    <div class="game-preview">
-      <h2>Featured Game: Slope</h2>
-      <p>Spire your way through endless waves of games.</p>
-      <img src="https://via.placeholder.com/400x200?text=Game+Preview" alt="Game Preview" style="width:100%; border-radius: 8px; margin-top: 1rem;" />
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 GameSpire. All rights reserved.
-  </footer>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="game.html">Play</a>
+    <a href="about.html">About</a>
+  </nav>
 </body>
 </html>
