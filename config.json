@@ -1,0 +1,8 @@
+{
+    "port": 9723,
+    "kaikkiDatabase": "database.kaikki.us",
+    "databaseAuthorisation": "Yks5rNaqJLdjnHYSsk6xEKtdYjNZTEfd5mB4xqwA5fTxhgPM8v1ph9fGb6p8",
+    "gamesManifestFile": "games.json",
+    "certPath": "./cert.pem",
+    "certKey": "./key.pem"
+}
