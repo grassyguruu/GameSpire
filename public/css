@@ -1,0 +1,112 @@
+/* style.css - Shared styles for all pages */
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 2rem;
+}
+
+nav a {
+  color: #00ffcc;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* index.css - Home page specific */
+h1 {
+  color: #00ffcc;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.play-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #00ffcc;
+  color: #0e0e0e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.play-button:hover {
+  background-color: #00ddb3;
+}
+
+
+/* game.css - Game list page specific */
+h1 {
+  color: #00ffcc;
+  font-size: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.game-button {
+  background-color: #1a1a1a;
+  border: 2px solid #00ffcc;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #00ffcc;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.game-button:hover {
+  background-color: #00ffcc;
+  color: #0e0e0e;
+  transform: scale(1.03);
+}
+
+
+/* about.css - About page specific */
+h1 {
+  color: #00ffcc;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.credits {
+  margin-top: 2rem;
+  background-color: #1a1a1a;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #00ffcc;
+  border-radius: 8px;
+}
+
+a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
